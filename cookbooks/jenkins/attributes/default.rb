@@ -42,7 +42,7 @@ default[:jenkins][:iptables_allow] = "enable"
 
 #download the latest version of plugins, bypassing update center
 #example: ["git", "URLSCM", ...]
-default[:jenkins][:server][:plugins] = []
+default[:jenkins][:server][:plugins] = ["git", "rake", "github", "greenballs"]
 
 #working around: http://tickets.opscode.com/browse/CHEF-1848
 #set to true if you have the CHEF-1848 patch applied
